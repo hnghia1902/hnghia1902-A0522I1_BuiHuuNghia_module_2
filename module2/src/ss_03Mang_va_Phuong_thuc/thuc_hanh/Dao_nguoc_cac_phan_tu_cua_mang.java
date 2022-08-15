@@ -1,4 +1,4 @@
-package Mang_va_Phuong_thuc.thuc_hanh;
+package ss_03Mang_va_Phuong_thuc.thuc_hanh;
 
 import java.util.Scanner;
 
