@@ -1,8 +1,6 @@
 package quan_li_sinhvien.repository;
 
 import quan_li_sinhvien.model.Student;
-import quan_li_sinhvien.service.IStudentservice;
-import quan_li_sinhvien.service.Studentservice;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,9 +15,15 @@ public class Studenrepository implements IStudentrepository {
     }
 
     @Override
-    public void remove() {
-
+    public void remove(int ma) {
+        for (int i = 0; i < studentList.size() ; i++) {
+            if(studentList.get(i).getMa() == ma){
+                studentList.remove(i);
+            }
+        }
     }
+
+
 
     @Override
     public List<Student> getAll() {

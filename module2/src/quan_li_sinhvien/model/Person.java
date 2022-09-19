@@ -68,5 +68,4 @@ public class Person {
         return Objects.equals(ma, person.ma);
     }
 
-
 }

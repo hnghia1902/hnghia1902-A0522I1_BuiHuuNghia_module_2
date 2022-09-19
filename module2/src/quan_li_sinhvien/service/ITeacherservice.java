@@ -1,10 +1,6 @@
 package quan_li_sinhvien.service;
 
-import quan_li_sinhvien.model.Student;
-
-import java.util.List;
-
-public interface IStudentservice {
+public interface ITeacherservice {
     void add();
 
     void remove(int ma);

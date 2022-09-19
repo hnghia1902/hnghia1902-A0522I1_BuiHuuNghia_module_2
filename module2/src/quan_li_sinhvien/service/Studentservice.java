@@ -37,8 +37,8 @@ public class Studentservice implements IStudentservice {
     }
 
     @Override
-    public void remove() {
-
+    public void remove(int ma) {
+        iStudentrepository.remove(ma);
     }
 
     public void hienthi(){

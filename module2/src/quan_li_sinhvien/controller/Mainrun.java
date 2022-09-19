@@ -19,6 +19,9 @@ public class Mainrun {
             switch (chon){
                 case 1: RunStudent.dsStudent();
                     break;
+                case 2: Runteacher.dsTeacher();
+                    break;
+                case 3: System.exit(3);
             }
         }
 

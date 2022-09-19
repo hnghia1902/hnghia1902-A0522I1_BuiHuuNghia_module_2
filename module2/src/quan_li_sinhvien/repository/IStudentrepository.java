@@ -6,6 +6,9 @@ import java.util.List;
 
 public interface IStudentrepository {
     void add(Student student);
-    void remove();
+    void remove(int ma);
+
+
+
     List<Student> getAll();
 }
