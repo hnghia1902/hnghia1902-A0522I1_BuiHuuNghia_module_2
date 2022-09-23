@@ -29,4 +29,5 @@ public class Xetai extends Phuongtiengiaothong {
                 "trongtai='" + trongtai + '\'' +
                 '}';
     }
+
 }

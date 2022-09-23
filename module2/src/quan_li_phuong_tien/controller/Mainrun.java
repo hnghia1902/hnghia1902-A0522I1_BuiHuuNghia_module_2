@@ -2,7 +2,6 @@ package quan_li_phuong_tien.controller;
 
 import quan_li_phuong_tien.service.IServicePhuongTien;
 import quan_li_phuong_tien.service.ServiceXeTai;
-import quan_li_sinhvien.service.IStudentservice;
 
 import java.util.Scanner;
 
@@ -25,6 +24,8 @@ public class Mainrun {
                 case 1:themmoi();
                 break;
                 case 2: hienthi();
+                break;
+                case 3: xoa();
                 break;
                 case 5:break;
             }
@@ -67,7 +68,17 @@ public class Mainrun {
     }
     public static void xoa(){
         Scanner scanner = new Scanner(System.in);
-
+        System.out.println("1.Xóa xe tải." +
+                "\n2.xóa xe ô tô." +
+                "\n3.xóa xe máy");
+        byte chon = Byte.parseByte(scanner.nextLine());
+        switch (chon){
+            case 1:
+                System.out.println("Nhập vào biển kiểm soát muốn xóa");
+                String bien_so_xe =  scanner.nextLine();
+                iServicePhuongTien.xoa(bien_so_xe);
+            break;
+        }
     }
 
 }

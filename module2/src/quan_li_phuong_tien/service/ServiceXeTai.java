@@ -51,4 +51,16 @@ public class ServiceXeTai implements IServicePhuongTien{
     }
 
     }
+
+    @Override
+    public boolean xoa(String bien_so_xe) {
+        List <Xetai> xetaiList = iRepositoryPhuongTien.get();
+        for (Xetai xetai : xetaiList){
+            if (xetai.getBienkiemsoat().equals(bien_so_xe)){
+                xetaiList.remove(bien_so_xe);
+                return true;
+            }
+        }
+        return false;
+    }
 }
